@@ -4,89 +4,100 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-	<link rel="icon" href="../assets/images/foodmap.ico">
 	<link rel="stylesheet" href="../css/main.css">
 	<title>Foddmap</title>
 </head>
-<body class="grad100">
-	<header class="container-fluid">
+<body>
+	<header class="container">
 		<div class="row">
-			<div class="col-xs-12">
-					<h1 class="text-center">Foodmap</h1>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h1 class="text-center">FOODMAP</h1>
+        <div class="box one"></div>
+				<hr class="line">
+        <div class="box two"></div>
 			</div>
-
-	<hr class="line text-center">
+      </div>
 	</header>
 
-	<!-- Visualización del mapa -->
+	<!-- Visualización del mapa-->
 	<section class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-sm-6 col-md-12">
 				<img  src="../assets/images/map00.PNG" alt="map" class="img-responsive img-thumbnail map">
 			</div>
 		</div>
 	</section >
+	<br>
 
-	<!-- Visualización de las opciones -->
+	<!-- Visualización de las opciones de restaurantes-->
+	<section  class="container-fluid">
+    <div class="row col-xs-12 col-sm-6 col-md-8">
+		  <h2 class="text-center">Comida cerca de ti <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></h2>
+		  <button class="btn dropdown-toggle" type="button" id="dropdownPlaces" data-dismiss="modal" data-toggle="dropdown" aria-haspopup="true" aria-label="close" aria-expanded="true">Restaurantes, Cevicherias, RestoBar ...<span class="glyphicon glyphicon-search pull-right" aria-hidden="true"></span></button>
+		  <ul class="dropdown-menu listado" aria-labelledby="dropdownPlaces">
+		    <li><a href="#">Restaurantes</a></li>
+		    <li><a href="#">Cevicherias</a></li>
+		    <li><a href="#">RestoBar</a></li>
+      </ul>
+		</div>
+	</section>
+	<!-- Contenedor de los Restauraante -->
 	<section class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12">
-				<h2 class="text-center">Comida cerca de ti</h2>
-				<div class="input-group">
-          <input type="text" class="form-control" placeholder="Busca tú restaurante favorito.." id="filter">
-          <span class="input-group-addon" id="basic-addon1"></span>
-			   </div>
-			</div>
-		</div>
-	</section>
+			<div class="filtros col-xs-12 col-sm-6 col-md-10">
+				<div class="restaurantes col-xs-6 ">
+					<img src="../assets/images/amazonica.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="cevicherias col-xs-6">
+					<img src="../assets/images/criolla.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="restobar col-xs-6">
+					<img src="../assets/images/marina.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="restaurantes col-xs-6">
+					<img src="../assets/images/arequipe.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="restaurantes col-xs-6">
+					<img src="../assets/images/amazonica.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="cevicherias col-xs-6">
+					<img src="../assets/images/criolla.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="restobar col-xs-6">
+					<img src="../assets/images/bar.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				<div class="restaurantes col-xs-6">
+					<img src="../assets/images/arequipe.jpg" alt="Responsive image" class="img-responsive img-rounded food">
+				</div>
+				</div>
 
-	<section class="container-fluid">
-		<div class="row content">
-			<div class="col-xs-5">
-				<img src="../assets/images/amazonica.jpg" alt="Responsive image" class="img-responsive img-rounded food">
-			</div>
-			<div class="col-xs-5">
-				<img src="../assets/images/criolla.jpg" alt="Responsive image" class="img-responsive img-rounded food">
 		  </div>
-			<div class="col-xs-5">
-				<img src="../assets/images/marina.jpg" alt="Responsive image" class="img-responsive img-rounded food">
-			</div>
-			<div class="col-xs-5">
-				<img src="../assets/images/arequipe.jpg" alt="Responsive image" class="img-responsive img-rounded food">
-			</div>
-		</div>
 
 	</section>
-	 <!-- modal  -->
-
-	 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-   <div class="modal-dialog modal-lg" role="document">
+	 <!-- modales  -->
+	 <!-- Modal Restaurantes -->
+	 <div class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-			<div class="modal-grad">
       <div class="modal-header">
-				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
+        <p>One fine body&hellip;</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-    </div>
-  </div>
-</div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
-
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-	<script src= "../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/options.js"></script>
+
 </body>
 </html>

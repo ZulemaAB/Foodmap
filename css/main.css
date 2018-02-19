@@ -1,7 +1,5 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+body{
+	background: #000;
 	font-family: 'Raleway', sans-serif !important;
 	color: #FFA81E;
 }
@@ -23,19 +21,36 @@
 
 }
 
-.vh100 {
-	height: 100vh;
-	font-size: 50px;
-}
-.grad100 {
-	background: #000;
-}
-.line {
-	border: 2px solid #fff;
+/* Línea divisoria  */
+.box{
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
 }
 
+.one {
+  position: absolute;
+  top: 75px;
+  left: 15px;
+}
+
+.two {
+  position: absolute;
+  top: 75px;
+  right: 15px;
+}
+
+.line {
+	border: 2px solid #fff;
+	width: 90%;
+}
+
+/* Mapa */
 .map {
-	height: 120px;
+	height: 100%;
+	width: 100%;
+
+
 }
 /*contenedor de restaurantes*/
 .content {
@@ -43,8 +58,16 @@
 
 }
 .food {
-margin : 20px;
+/* margin : 20px;
 height: 180px;
-width: 230px;
+width: 230px; */
+padding: 10px;
+text-align: center;
+}
 
+#dropdownPlaces {
+	width: 100%;
+}
+.places{
+	width: 25%;
 }
